@@ -1,0 +1,106 @@
+form {
+    border: 1px solid $lightblue;
+    border-radius: 5px;
+}
+
+.login-area {
+    padding: 100px 18px 130px 18px;
+}
+
+.user-img {
+    width: 94px;
+}
+
+.error {
+    border: 1px solid #d04f4f;
+    -webkit-box-shadow: 2px 6px 36px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 36px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 6px 36px 0px rgba(0,0,0,0.75);
+
+}
+
+.fa {
+    color: $white;
+    
+}
+
+.keyboard {
+    
+    margin-left: -10px;
+    margin-top: 2px;
+    
+    
+    i {
+        font-size: 26px;
+        margin-left: -10px; 
+        cursor: pointer;
+    }
+   
+}
+
+.user-face {
+    width: 94px;
+    height: 94px;
+    background-color: $white;
+    border-radius: 45px;
+    /*position: absolute;*/
+    display: inline-block;
+    margin-top: -48px;
+}
+
+.bank-number {
+    margin-top: 15px;
+    
+    span {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    
+    .fa {
+        color: $white;
+        font-size: 10px;
+        font-weight: 300;
+        background-color: $lightblue;
+        padding: 4px;
+        border-radius: 10px;
+        margin-left: 6px;
+        cursor: pointer;
+    }
+    
+}
+
+.password {
+    margin-top: 20px;
+    padding-right: 25px;
+}
+
+.select {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: transparent;
+    
+    
+    &:hover {
+        background-color: $lightblue;
+    }
+}
+
+.go {
+    background-color: $white;
+    padding: 7px 50px;
+    color: $black;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 5px;
+    
+    &:hover {
+        background-color: $lightblue;
+    }
+}
+
+.submit-btns {
+    margin-bottom: 40px;
+}

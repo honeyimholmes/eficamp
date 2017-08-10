@@ -1,0 +1,13 @@
+.logo {
+    width: 160px;
+    
+    &:hover {
+        animation: logohover 3s infinite;
+    }
+}
+
+@keyframes logohover {
+    0% {background-color: transparent;}
+    50% {background-color: rgba(229, 226, 226, 0.2);}
+    100% {background-color: transparent;}
+}
