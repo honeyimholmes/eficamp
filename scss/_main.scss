@@ -3,8 +3,12 @@ html, body {
     padding: 0;
 }
 
+body {
+    background-color: $blue;
+    font-family: $font-family;
+}
 
-.container {
+.container-bg {
     background-image: url(../img/bg.jpeg);
     background-size: cover;
     width: 100%;
@@ -38,3 +42,12 @@ h1 {
     font-weight: 300;
     margin-top: 40px;
 }
+
+.hide {
+    display: none;
+}
+
+img {
+    display: inline-block;
+}
+

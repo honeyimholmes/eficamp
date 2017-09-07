@@ -1,0 +1,230 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="container">
+        <header class="dashboard-header">
+            <div class="row">
+               <div class="hide-for-small-only medium-4 large-5 columns">
+                   <div class="user-info">
+                       <div class="container">
+                           <div class="row">
+                                <div class="medium-5 columns">
+                                   <div class="header-flex">
+                                        <img src="img/logo.png" class="dashboard-icon">
+                                        <img src="img/man.png" class="dashboard-icon dashboard-user-icon">
+                                   </div>                               
+                                </div>
+                                <div class="medium-7 columns">
+                                   <div class="header-flex-user">
+                                        <p class="user-name-info">Jan Kowalski</p>
+                                        <div class="user-icons">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i> 
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </div>             
+                                   </div>      
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="hide-for-small-only medium-6 large-5 columns">
+                    <nav class="navbar">
+                        <div class="container">
+                           <div class="row">
+                               <ul class="nav-menu">
+                                   <li class="active"><i class="fa fa-home" aria-hidden="true"></i>Home</li>
+                                   <li><i class="fa fa-search" aria-hidden="true"></i>Analyse</li>
+                                   <li><i class="fa fa-calendar-o" aria-hidden="true"></i>Plan</li>
+                                   <li><i class="fa fa-flag" aria-hidden="true"></i>Earn</li>
+                               </ul>
+                           </div>
+                        </div>
+                   </nav>
+                </div>
+                <div class="hide-for-small-only medium-2 large-2 columns">
+                    <div class="navigation">
+                        <div class="search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <div class="between"></div>
+                        <div class="logout">
+                            <i class="fa fa-power-off" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="transfer-main">
+           <div class="row">
+               <div class="small-12 medium-offset-1 medium-10 columns">
+                   <div class="transfer-content">
+                        <div class="container">
+                           <div class="row">
+                                <div class="small-12 columns">
+                                    <a href="#"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                                </div>
+                            </div>  
+                            <form class="transfer-form">
+                                <div class="current-account">
+                                    <div class="row">
+                                       <div class="small-1 medium-offset-1 medium-1 columns">
+                                          <i class="fa fa-address-card" aria-hidden="true"></i>
+                                       </div>      
+                                       <div class="small-6 medium-5 columns">
+                                            <p class="current">Current account</p>
+                                            <p>33 1234 5678 2233 0000 8373 7756</p>
+                                       </div>
+                                       <div class="small-5 medium-5 columns">
+                                           <h2><span>2 917,50</span> PLN</h2>
+                                       </div>
+                                   </div>   
+                                </div>        
+                               <div class="row">
+                                    <div class="small-offset-2 small-10 columns">
+                                       <div class="choose-account">
+                                           <i class="fa fa-plus-square account-plus" aria-hidden="true"></i><span>Add the account from which you draw funds</span>
+                                       </div>
+                                    </div>  
+                               </div>  
+                               <div class="row">
+                                   <div class="small-2 columns">
+                                       <label>Type</label>
+                                   </div>
+                                   <div class="small-10 columns">
+                                       <fieldset id="transfer-type">
+                                           <input type="radio" id="transfer-type-1" name="transfer-type" value="Country" class="hide">
+                                           <img src="">
+                                           <label for="transfer-type-1">Country</label>
+                                           <input type="radio" id="transfer-type-2" name="transfer-type" value="Own" class="hide">
+                                           <label for="transfer-type-2">Own</label>
+                                           <input type="radio" id="transfer-type-3" name="transfer-type" value="Currencies" class="hide">
+                                           <label for="transfer-type-3">Currencies</label>
+                                           <input type="radio" id="transfer-type-4" name="transfer-type" value="ZUS" class="hide">
+                                           <label for="transfer-type-4">ZUS</label>
+                                           <input type="radio" id="transfer-type-5" name="transfer-type" value="TAX" class="hide">
+                                           <label for="transfer-type-5">TAX</label>
+                                           <input type="radio" id="transfer-type-6" name="transfer-type" value="GSM" class="hide">
+                                           <label for="transfer-type-6">GSM</label>
+                                       </fieldset>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="small-2 columns">
+                                       <label for="transfer-recipient">Recipient</label>
+                                   </div>
+                                   <div class="small-10 columns">
+                                       <input type="text" id="transfer-recipient" name="transfer-recipient" calue="Recipient">
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="small-2 columns">
+                                       <label>Where</label>
+                                   </div>
+                                   <div class="small-10 columns">
+                                       <fieldset id="transfer-destination">
+                                           <label for="account">
+                                               <input type="radio" id="radio-account" name="transfer-destination" value="Account">
+                                               <span>Account</span>
+                                           </label>                                   
+                                           <label for="radio-facebook">
+                                               <input type="radio" id="radio-facebook" name="transfer-destination" value="Facebook">
+                                               <span>Facebook</span>
+                                           </label>
+                                           <label for="radio-phone">
+                                               <input type="radio" id="radio-phone" name="transfer-destination" value="Phone">
+                                               <span>Phone</span>
+                                           </label>
+                                           <label for="radio-email">
+                                               <input type="radio" id="radio-email" name="transfer-destination" value="E-mail">
+                                               <span>E-mail</span>
+                                           </label>
+                                           <label for="radio-byphone">
+                                               <input type="radio" id="radio-byphone" name="transfer-destination" value="By phone">
+                                               <span>By phone</span>
+                                           </label>
+                                       </fieldset>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="small-2 columns">
+                                       <label for="transfer-number">Number</label>
+                                   </div>
+                                   <div class="small-10 columns">
+                                       <input type="number" id="transfer-number" name="transfer-number" value="Number">
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="small-2 columns">
+                                       <label for="transfer-sum">Sum</label>
+                                   </div>
+                                   <div class="small-10 columns">
+                                       <input type="number" id="transfer-sum" name="transfer-sum" value="Sum">
+                                       <select name="transfer-sum">
+                                            <option value="val-1">PLN</option>
+                                            <option value="val-2">EUR</option>
+                                       </select>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="small-2 columns">
+                                       <label for="transfer-when">When</label>
+                                   </div>
+                                   <div class="small-10 columns">
+                                       <input type="date" id="transfer-when" name="transfer-when" value="When">
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="small-2 columns">
+                                       <label for="transfer-title">Title</label>
+                                   </div>
+                                   <div class="small-10 columns">
+                                       <input type="text" id="transfer-title" name="transfer-title" value="Title">
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="small-2 columns">
+                                       <label>Type of transfer</label>
+                                   </div>
+                                   <div class="small-10 columns">
+                                       <fieldset id="transfer-type">
+                                           <label for="radio-normally">
+                                               <input type="radio" id="radio-normally" name="transfer-type" value="Normally">
+                                               <span>Normally</span>
+                                           </label>
+                                           <label for="radio-eliksir">
+                                               <input type="radio" id="radio-eliksir" name="transfer-type" value="Express Eliksir">
+                                               <span>Express Eliksir</span>
+                                           </label>
+                                           <label for="radio-sorbnet">
+                                               <input type="radio" id="radio-sorbnet" name="transfer-type" value="Sorbnet">
+                                               <span>Sorbnet</span>
+                                           </label>
+                                       </fieldset>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="small-offset-2 small-10">
+                                       <input type="submit" id="form-submit" value="Continue">
+                                   </div>
+                               </div>
+                            </form>         
+                        </div>   
+                </div>
+               </div>
+           </div>      
+        </main>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/dist/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

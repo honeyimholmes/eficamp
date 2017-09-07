@@ -1,0 +1,93 @@
+.transfer-main {
+    background-color: $gray;
+}
+
+.transfer-content {
+    background-color: $white;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    p {
+        color: $black;
+    }
+    
+    i {
+        color: $gray;
+        font-size: 40px;
+        margin-top: 5px;
+    }
+}
+
+form {
+    border: 0;
+}
+
+.current-account {
+    border: 1px solid $gray;
+    border-radius: 10px;
+    padding-top: 15px;
+    
+    i {
+        color: $darkgray;
+        
+    }
+    
+    p {
+        font-size: 18px;
+        
+        
+    }
+    
+    h2 {
+        font-family: $font-family;
+        
+        span {
+            font-weight: 600;
+            color: $black;
+        }
+    }
+}
+
+.current {
+    margin-bottom: -10px;
+}
+
+.choose-account {
+    
+    display: flex;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    i {
+        font-size: 28px;
+        color: $darkgray;
+        align-self: center;
+    }
+    
+    span {
+        color: $black;
+        align-self: center;
+        margin-left: 10px;
+        line-height: 16px;
+    }
+}
+
+label {
+    display: inline-block;
+}
+
+input[type=number] {
+    display: inline-block;
+    width: 60%;
+}
+
+select {
+    display: inline-block;
+    width: 20%;
+}
