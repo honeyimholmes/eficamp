@@ -22,8 +22,8 @@ $(function() {
         $.ajax({
             type: "post",
             data: {
-                login: loginInput.value,
-                password: passwordInput.value
+                login: /*loginInput.value*/'efi',
+                password: /*passwordInput.value*/ 'camp'
                 },
             url: "https://efigence-camp.herokuapp.com/api/login",
             error: function(response) {
@@ -32,7 +32,7 @@ $(function() {
                 tooltipMsg.text(response.responseJSON.message);
               },
             success: function(response) {
-                console.log("success", response);
+               window.location.replace('index.html')
               }
             });
     
@@ -42,6 +42,7 @@ $(function() {
         bankNumber.addClass('hide');
         clientInput.show('fast');
     });
+    
 
     
 });

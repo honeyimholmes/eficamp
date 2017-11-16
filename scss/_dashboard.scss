@@ -172,14 +172,113 @@
 
 .finance-sum {
     display: inline-block;
+    margin-left: 15px;
 }
 
 .products-icons {
     display: block;
-    width: 56px;
+    width: 45px;
     float: left;
+    margin-right: 10px;
 }
 
 main {
     background-color: $gray;
+}
+
+.account-switch {
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.inline-text {
+    display: inline-block;
+}
+
+.on-off {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.money-sum {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: -20px;
+
+    span {
+        font-weight: 300;
+        color: $black;
+    }
+}
+
+.scheduled-pays {
+    
+    display: flex;
+    align-items: center;
+}
+
+.finance-details {
+    
+        button {
+        display: inline-block;
+        color: $white;
+        font-size: 15px;
+        font-family: $font-family;
+        text-transform: uppercase;
+        background-color: $blue;
+        font-weight: 300;
+        padding: 6px 18px;
+        margin-top: -10px;
+        margin-left: 10px;
+        height: auto;
+        align-self: flex-start;
+    }
+}
+
+.contents {
+    
+    margin-top: 20px;
+    
+    p {
+        color: $black;     
+    }
+}
+
+.contents-products {
+    background-color: $white;
+    padding: 20px 36px 30px 36px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+    p {
+        margin-bottom: -5px;
+    }
+}
+
+.bank-loans {
+    background-color: $blue;
+}
+
+.history-list {
+    border-radius: 5px;
+    background-color: $white;
+    max-height: 650px;
+    overflow: auto;
+}
+
+.history-row {
+    background-color: $white;
+    border-bottom: 1px solid $gray;
+    padding: 10px 0;
+    
+    p {
+        margin-bottom: -5px;
+    }
+    
+    span {
+        color: $black;
+        font-weight: 600;
+    }
 }

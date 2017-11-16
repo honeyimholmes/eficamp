@@ -71,7 +71,7 @@
                                     <a href="#"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
                                 </div>
                             </div>  
-                            <form class="transfer-form">
+                            <form class="transfer-form" data-validate>
                                 <div class="current-account">
                                     <div class="row">
                                        <div class="small-1 medium-offset-1 medium-1 columns">
@@ -120,7 +120,7 @@
                                        <label for="transfer-recipient">Recipient</label>
                                    </div>
                                    <div class="small-10 columns">
-                                       <input type="text" id="transfer-recipient" name="transfer-recipient" calue="Recipient">
+                                       <input type="text" id="transfer-recipient" name="transfer-recipient" calue="Recipient" data-validate-rules="required,recipient">
                                    </div>
                                </div>
                                <div class="row">
@@ -130,23 +130,23 @@
                                    <div class="small-10 columns">
                                        <fieldset id="transfer-destination">
                                            <label for="account">
-                                               <input type="radio" id="radio-account" name="transfer-destination" value="Account">
+                                               <input type="radio" id="radio-account" name="transfer-destination" value="Account" data-validate-rules="required,account">
                                                <span>Account</span>
                                            </label>                                   
                                            <label for="radio-facebook">
-                                               <input type="radio" id="radio-facebook" name="transfer-destination" value="Facebook">
+                                               <input type="radio" id="radio-facebook" name="transfer-destination" value="Facebook" data-validate-rules="required,account">
                                                <span>Facebook</span>
                                            </label>
                                            <label for="radio-phone">
-                                               <input type="radio" id="radio-phone" name="transfer-destination" value="Phone">
+                                               <input type="radio" id="radio-phone" name="transfer-destination" value="Phone" data-validate-rules="required,account">
                                                <span>Phone</span>
                                            </label>
                                            <label for="radio-email">
-                                               <input type="radio" id="radio-email" name="transfer-destination" value="E-mail">
+                                               <input type="radio" id="radio-email" name="transfer-destination" value="E-mail" data-validate-rules="required,account">
                                                <span>E-mail</span>
                                            </label>
                                            <label for="radio-byphone">
-                                               <input type="radio" id="radio-byphone" name="transfer-destination" value="By phone">
+                                               <input type="radio" id="radio-byphone" name="transfer-destination" value="By phone" data-validate-rules="required,account">
                                                <span>By phone</span>
                                            </label>
                                        </fieldset>
@@ -157,7 +157,7 @@
                                        <label for="transfer-number">Number</label>
                                    </div>
                                    <div class="small-10 columns">
-                                       <input type="number" id="transfer-number" name="transfer-number" value="Number">
+                                       <input type="number" id="transfer-number" name="transfer-number" value="Number" data-validate-rules="required,number">
                                    </div>
                                </div>
                                <div class="row">
@@ -165,7 +165,7 @@
                                        <label for="transfer-sum">Sum</label>
                                    </div>
                                    <div class="small-10 columns">
-                                       <input type="number" id="transfer-sum" name="transfer-sum" value="Sum">
+                                       <input type="number" id="transfer-sum" name="transfer-sum" value="Sum" data-validate-rules="required,sum">
                                        <select name="transfer-sum">
                                             <option value="val-1">PLN</option>
                                             <option value="val-2">EUR</option>
@@ -177,7 +177,7 @@
                                        <label for="transfer-when">When</label>
                                    </div>
                                    <div class="small-10 columns">
-                                       <input type="date" id="transfer-when" name="transfer-when" value="When">
+                                       <input type="date" id="transfer-when" name="transfer-when" value="When" data-validate-rules="required,when">
                                    </div>
                                </div>
                                <div class="row">
@@ -185,7 +185,7 @@
                                        <label for="transfer-title">Title</label>
                                    </div>
                                    <div class="small-10 columns">
-                                       <input type="text" id="transfer-title" name="transfer-title" value="Title">
+                                       <input type="text" id="transfer-title" name="transfer-title" value="Title" data-validate-rules="required,title">
                                    </div>
                                </div>
                                <div class="row">
@@ -226,5 +226,6 @@
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/validate.js"></script>
   </body>
 </html>

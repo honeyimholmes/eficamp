@@ -101,6 +101,24 @@ form {
     }
 }
 
+.input-login {
+    width: 100%;
+}
+
+.input-pass {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .input-pass {
+        width: 100%;
+    }
+}
+
+label {
+    display: block;
+}
+
 .submit-btns {
     margin-bottom: 40px;
 }
@@ -142,4 +160,8 @@ form {
             left: 10px solid transparent;
         }
     }
+}
+
+.login-form {
+    border: 1px solid $white;
 }

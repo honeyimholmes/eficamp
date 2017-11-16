@@ -83,19 +83,32 @@
                     <div class="row">
                         <div class="hide-for-small-only medium-3 columns">
                             <h2>Balance</h2>
-                            <p>7 200,34 PLN</p>
+                            <p class="money-sum">7 200,34 <span>PLN</span></p>
                         </div>
                         <div class="hide-for-small-only medium-3 columns">
                             <h2>Available funds</h2>
-                            <p>7 200,34 PLN</p>
+                            <p class="money-sum">7 200,34 <span>PLN</span></p>
                         </div>
                         <div class="hide-for-small-only medium-3 columns">
                             <h2>Scheduled payments</h2>
-                            <p clas="finance-sum">2 200,34 PLN</p>
-                            <button>Fast pay</button>
+                            <div class="row">
+                               <div class="scheduled-pays">
+                                   <p class="finance-sum money-sum">2 200,34 <span>PLN</span></p>
+                                   <button>Fast pay</button>
+                               </div>
+                            </div> 
                         </div>
                         <div class="hide-for-small-only medium-3 columns">
-                            <p>Account analysis</p>
+                            <div class="account-switch">
+                                <p class="inline-text">Account analysis</p>
+                                <div class="switch on-off">
+                                    <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+                                    <label class="switch-paddle" for="yes-no">
+                                        <span class="switch-active" aria-hidden="true">ON</span>
+                                        <span class="switch-inactive" aria-hidden="true">OFF</span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,90 +132,111 @@
                                        <p>Products</p>
                                     </div>
                                     <div class="small-12 medium-6 columns">
-                                        <img src="img/wallet-filled-money-tool.svg" class="products-icons"> 
-                                        <p>Wallets [3]</p>
-                                        <p>500,00 PLN</p>
+                                        <div class="contents-products">
+                                            <img src="img/wallet-filled-money-tool.svg" class="products-icons"> 
+                                            <p>Wallets [3]</p>
+                                            <p>500,00 PLN</p>
+                                        </div>
                                     </div>
                                     <div class="small-12 medium-6 columns">
-                                        <p>Deposits [2]</p>
-                                        <p>10 000,00 PLN</p>
+                                       <div class="contents-products">
+                                            <img src="img/piggy-bank.svg" class="products-icons">
+                                            <p>Deposits [2]</p>
+                                            <p>10 000,00 PLN</p>
+                                        </div>
                                     </div>
                                     <div class="small-12 medium-6 columns">
-                                        <p>Accounts</p>
-                                        <p>7 200,00 PLN</p>
+                                       <div class="contents-products">
+                                            <img src="img/money-bills-and-coins-stack.svg" class="products-icons">
+                                            <p>Accounts</p>
+                                            <p>7 200,00 PLN</p>
+                                        </div>
                                     </div>
                                     <div class="small-12 medium-6 columns">
-                                        <p>Funds [3]</p>
-                                        <p>7 000,00 PLN</p>
+                                       <div class="contents-products">
+                                            <img src="img/signal.svg" class="products-icons">
+                                            <p>Funds [3]</p>
+                                            <p>7 000,00 PLN</p>
+                                        </div>
                                     </div>
                                     <div class="small-12 medium-6 columns">
-                                        <p>Bank loans</p>
-                                        <p>-127 000,00 PLN</p>
+                                       <div class="contents-products bank-loans">
+                                            <img src="img/pointing-right.svg" class="products-icons">
+                                            <p>Bank loans</p>
+                                            <p>-127 000,00 PLN</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="small-12 medium-6 columns">
                             <div class="container">
-                                <div class="row">
+                                <p>History</p>
+                                <div class="history-list">
                                     <div class="small-12 columns">
-                                        <p>History</p>
-                                    </div>
-                                    <div class="small-12 columns">
-                                        <div class="history-list">
-                                            <div class="container">
+                                        <div class="container">
+                                            <div class="history-row">
                                                 <div class="row">
-                                                    <div class="small-2">
+                                                    <div class="small-2 columns">
                                                         <p>29.06</p>
                                                     </div>
-                                                    <div class="small-7">
+                                                    <div class="small-7 columns">
+                                                        <p>Gas Station Shell, Warsaw</p>
+                                                        <p>Gas</p>
+                                                    </div>
+                                                    <div class="small-3 columns">
+                                                        <p><span>-100,00</span> PLN</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="history-row">
+                                                <div class="row">
+                                                    <div class="small-2 columns">
+                                                        <p>29.06</p>
+                                                    </div>
+                                                    <div class="small-7 columns">
                                                         <p>Gas Station Shell, Warsaw</p>
                                                     </div>
-                                                    <div class="small-3">
+                                                    <div class="small-3 columns">
                                                         <p>-100,00 PLN</p>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="history-row">
                                                 <div class="row">
-                                                    <div class="small-2">
+                                                    <div class="small-2 columns">
                                                         <p>29.06</p>
                                                     </div>
-                                                    <div class="small-7">
+                                                    <div class="small-7 columns">
                                                         <p>Gas Station Shell, Warsaw</p>
                                                     </div>
-                                                    <div class="small-3">
+                                                    <div class="small-3 columns">
                                                         <p>-100,00 PLN</p>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="history-row">
                                                 <div class="row">
-                                                    <div class="small-2">
+                                                    <div class="small-2 columns">
                                                         <p>29.06</p>
                                                     </div>
-                                                    <div class="small-7">
+                                                    <div class="small-7 columns">
                                                         <p>Gas Station Shell, Warsaw</p>
                                                     </div>
-                                                    <div class="small-3">
+                                                    <div class="small-3 columns">
                                                         <p>-100,00 PLN</p>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="history-row">
                                                 <div class="row">
-                                                    <div class="small-2">
+                                                    <div class="small-2 columns">
                                                         <p>29.06</p>
                                                     </div>
-                                                    <div class="small-7">
+                                                    <div class="small-7 columns">
                                                         <p>Gas Station Shell, Warsaw</p>
                                                     </div>
-                                                    <div class="small-3">
-                                                        <p>-100,00 PLN</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="small-2">
-                                                        <p>29.06</p>
-                                                    </div>
-                                                    <div class="small-7">
-                                                        <p>Gas Station Shell, Warsaw</p>
-                                                    </div>
-                                                    <div class="small-3">
+                                                    <div class="small-3 columns">
                                                         <p>-100,00 PLN</p>
                                                     </div>
                                                 </div>
